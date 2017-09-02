@@ -38,8 +38,8 @@ var observer = new MutationObserver(function(mutations) {
 });
 
 
-observer.observe(volume_slider, { 
-  attributes: true, 
+observer.observe(volume_slider, {
+  attributes: true,
   attributeFilter: ['aria-valuenow', 'aria-valuetext'] });
 
 volume_slider.dataset.selectContentVal = 1;
